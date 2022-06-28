@@ -8,7 +8,6 @@ public class TestSelenium {
     public void startWebDriver(){
         System.setProperty("webdriver.chrome.driver", "/Users/kirillvasilenko/Documents/Programs/chromedriver");
 
-        //WebDriver driver = new FirefoxDriver();
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://seleniumsimplified.com");
         Assert.assertTrue("title should start differently",
